@@ -1,0 +1,57 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 450px;
+}
+
+.card .advice-id {
+  color: hsl(256, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.card .advice-description {
+  font-size: 23px;
+  padding: 23px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+
+.card picture img {
+  width: 100%;
+}
+
+.card .advice-update {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(150, 86%, 25%);
+  transform: translateY(85%);  
+}
+/* O transform: translateY(85%); foi adicionado para centralizar o botão na tela usando o eixo Y. 
+   Também é possível fazer o mesmo com utilizando o position, mas daria um pouco mais de trabalho.
+*/
+
+.card .advice-update:hover {
+  color: #066336;
+  cursor: pointer;
+  box-shadow: 0 5px 15px hsl(150, 94%, 25%);
+}
